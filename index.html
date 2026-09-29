@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="AP TET Paper 1A, Paper 2A ప్రాక్టీస్ – తెలుగు, English లో జవాబులతో. రాయ్ ఎడ్యుకేషన్.">
+<meta name="theme-color" content="#1B2A6B">
+<title>TET ప్రాక్టీస్ – రాయ్ ఎడ్యుకేషన్</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600;800&family=Noto+Sans+Telugu:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1B2A6B;--violet:#4B3FD1;--haldi:#E8A400;--leaf:#2F7D4E;--red:#C0392B;
+  --bg:#F5F6FB;--card:#FFFFFF;--line:#E1E4EF;--text:#1D2433;--muted:#5A6275;
+  --ok-bg:#E3F4EA;--ok:#1E7A45;--bad-bg:#FBE6E4;--bad:#B3261E;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{font-family:'Noto Sans Telugu',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;padding-bottom:env(safe-area-inset-bottom,0)}
+button{font:inherit;cursor:pointer}
+button:focus-visible,a:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--haldi);outline-offset:2px}
+.wrap{max-width:720px;margin:0 auto;padding:0 16px}
+h1,h2,h3{font-family:'Baloo Tamma 2','Noto Sans Telugu',sans-serif;line-height:1.25}
+
+/* Hero */
+.hero{background:linear-gradient(135deg,#E6E3FF 0%,#F4EEFF 45%,#FFF0E2 100%);border-radius:0 0 28px 28px;padding:calc(env(safe-area-inset-top,0px) + 24px) 0 26px}
+.logo{position:relative;width:64px;height:64px;border-radius:18px;background:linear-gradient(135deg,var(--violet),#7A45C9);display:grid;place-items:center;color:#fff;box-shadow:0 10px 24px rgba(75,63,209,.3)}
+.logo svg{width:32px;height:32px}
+.logo::after{content:"✦";position:absolute;right:-12px;top:-10px;color:var(--haldi);font-size:18px}
+.hero h1{font-size:34px;font-weight:800;margin:14px 0 4px;color:#15163A}
+.hero p{margin:0;color:var(--muted);font-size:16px}
+.brand{display:inline-block;margin-top:6px;font-size:13px;font-weight:700;color:var(--violet)}
+.chips{display:flex;gap:10px;margin-top:18px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.ico{flex:none;width:48px;height:48px;border-radius:50%;background:#fff;display:grid;place-items:center;color:var(--c);font-weight:800;font-size:18px;box-shadow:0 2px 8px rgba(27,42,107,.08)}
+.ico svg{width:24px;height:24px}
+
+/* Sections */
+.label{font-size:13px;font-weight:700;letter-spacing:.08em;color:var(--muted);margin:24px 4px 10px;text-transform:uppercase}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.seg button{background:#fff;border:2px solid var(--line);border-radius:16px;padding:14px 10px;display:flex;align-items:center;justify-content:center;gap:10px;color:var(--text);font-weight:700;font-size:17px}
+.seg button .dot{width:36px;height:36px;border-radius:50%;background:var(--bg);display:grid;place-items:center;font-size:15px}
+.seg button.on{border-color:var(--violet);background:#F0EEFF;color:var(--violet)}
+.seg button.on .dot{background:var(--violet);color:#fff}
+.seg.paper button{flex-direction:column;align-items:flex-start;gap:0;padding:12px 16px;text-align:left}
+.seg.paper small{font-weight:600;font-size:13px;color:var(--muted)}
+.seg.paper button.on{background:var(--violet);color:#fff;border-color:var(--violet)}
+.seg.paper button.on small{color:#DCD8FF}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px}
+.steps{list-style:none;margin:0;padding:0}
+.steps li{display:flex;gap:14px;align-items:flex-start;padding:14px 16px;border-bottom:1px solid var(--line)}
+.steps li:last-child{border-bottom:0}
+.steps b{flex:none;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:14px}
+.steps li:nth-child(1) b{background:#ECEAFF;color:var(--violet)}
+.steps li:nth-child(2) b{background:#FDE7EC;color:#C2185B}
+.steps li:nth-child(3) b{background:var(--ok-bg);color:var(--ok)}
+.steps li:nth-child(4) b{background:#FFF1D6;color:#B45309}
+
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;border:0;border-radius:16px;padding:16px;font-size:18px;font-weight:700;color:#fff;background:linear-gradient(90deg,var(--violet),#7A45C9);box-shadow:0 8px 20px rgba(75,63,209,.25)}
+.btn.alt{background:#fff;color:var(--violet);border:2px solid var(--violet);box-shadow:none}
+.btn.sm{padding:10px 14px;font-size:15px;border-radius:12px;width:auto}
+.stack{display:grid;gap:10px;margin:22px 0}
+.stat-line{display:flex;justify-content:space-around;text-align:center;padding:14px 8px}
+.stat-line b{display:block;font-size:22px;font-family:'Baloo Tamma 2',sans-serif}
+.stat-line span{font-size:13px;color:var(--muted)}
+
+/* Top bar */
+.top{position:sticky;top:0;z-index:10;background:rgba(245,246,251,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.top-in{display:flex;align-items:center;gap:10px;padding:10px 0}
+.back{flex:none;width:40px;height:40px;border-radius:12px;border:1px solid var(--line);background:#fff;display:grid;place-items:center;color:var(--ink)}
+.back svg{width:20px;height:20px}
+.top h2{margin:0;font-size:19px;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar{height:6px;background:var(--line);border-radius:6px;overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--leaf),#43A36A);border-radius:6px;transition:width .3s}
+
+/* Subjects */
+.subj{display:flex;align-items:center;gap:14px;width:100%;text-align:left;background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px;margin-bottom:10px;color:var(--text)}
+.subj:hover{border-color:var(--violet)}
+.subj .ico{box-shadow:none;background:color-mix(in srgb,var(--c) 12%,#fff)}
+.subj-main{flex:1;min-width:0}
+.subj-main h3{margin:0 0 4px;font-size:17px}
+.subj-main .meta{font-size:13px;color:var(--muted);margin-top:4px}
+.go{color:var(--muted);flex:none}
+
+/* Quiz */
+.filters{display:flex;gap:8px;overflow-x:auto;padding:10px 0 2px;scrollbar-width:none}
+.filters::-webkit-scrollbar{display:none}
+.filters button{flex:none;border:1px solid var(--line);background:#fff;border-radius:20px;padding:5px 14px;font-size:14px;color:var(--text)}
+.filters button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.counts{display:flex;gap:14px;font-size:13px;color:var(--muted);padding:6px 0 10px}
+.counts .r{color:var(--ok);font-weight:700}.counts .w{color:var(--bad);font-weight:700}
+.qcard{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px;margin:12px 0;scroll-margin-top:130px}
+.qhead{display:flex;gap:10px;align-items:flex-start}
+.qn{flex:none;min-width:30px;height:30px;padding:0 6px;border-radius:10px;background:#ECEAFF;color:var(--violet);display:grid;place-items:center;font-weight:700;font-size:14px}
+.qtext{margin:2px 0 12px;font-size:17px;font-weight:600}
+.opts{display:grid;gap:8px}
+.opt{display:flex;align-items:center;gap:10px;width:100%;text-align:left;background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:11px 12px;color:var(--text);font-size:16px}
+.opt:hover:not(:disabled){border-color:var(--violet)}
+.opt .k{flex:none;width:28px;height:28px;border-radius:50%;background:var(--bg);display:grid;place-items:center;font-size:13px;font-weight:700;color:var(--muted)}
+.opt:disabled{cursor:default}
+.opt.ok{background:var(--ok-bg);border-color:var(--ok);color:#0F4D2A}
+.opt.ok .k{background:var(--ok);color:#fff}
+.opt.bad{background:var(--bad-bg);border-color:var(--bad);color:#7A1A14}
+.opt.bad .k{background:var(--bad);color:#fff}
+.exp{margin-top:10px;padding:10px 12px;border-radius:12px;background:#FFF6DC;border-left:4px solid var(--haldi);font-size:14px}
+.empty{text-align:center;color:var(--muted);padding:30px 10px}
+.done{background:linear-gradient(135deg,var(--leaf),#43A36A);color:#fff;border-radius:18px;padding:18px;text-align:center;margin:12px 0}
+.done h3{margin:0;font-size:22px}
+.tools{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 8px}
+
+/* Add form */
+textarea,select{width:100%;border:1.5px solid var(--line);border-radius:14px;padding:12px;font:inherit;font-size:15px;background:#fff;color:var(--text)}
+textarea{min-height:180px;resize:vertical}
+.hint{font-size:14px;color:var(--muted)}
+.hint code{background:#ECEAFF;color:var(--violet);border-radius:6px;padding:1px 6px;font-size:13px;word-break:break-all}
+.msg{margin-top:10px;padding:10px 12px;border-radius:12px;font-size:14px;display:none}
+.msg.ok{display:block;background:var(--ok-bg);color:var(--ok)}
+.msg.bad{display:block;background:var(--bad-bg);color:var(--bad)}
+
+footer{text-align:center;padding:26px 16px 30px;color:var(--muted);font-size:13px}
+footer b{display:block;font-family:'Baloo Tamma 2',sans-serif;font-size:19px;color:var(--ink)}
+footer a{color:var(--violet);text-decoration:none}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<footer>
+  <b>రాయ్ ఎడ్యుకేషన్</b>
+  <a href="https://www.raayeducation.in" rel="noopener">raayeducation.in</a>
+</footer>
+
+<script>
+/* ---------- Question helper ---------- */
+function Q(qen,qte,oen,ote,a,een,ete){
+  return {q:{en:qen,te:qte||qen},o:oen.map(function(x,i){return {en:x,te:(ote&&ote[i])||x};}),a:a,e:(een||ete)?{en:een||ete,te:ete||een}:null};
+}
+function T(q,o,a,e){return Q(q,null,o,null,a,e,null);}
+
+/* ---------- Icons ---------- */
+var SVG={
+  people:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5"/><circle cx="17" cy="9" r="2.5"/><path d="M15.5 14.6c2.9.2 5.5 2.1 5.5 5.4"/></svg>',
+  atom:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="1.8" fill="currentColor"/><ellipse cx="12" cy="12" rx="9.5" ry="3.8"/><ellipse cx="12" cy="12" rx="9.5" ry="3.8" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="9.5" ry="3.8" transform="rotate(120 12 12)"/></svg>',
+  leaf:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14z"/><path d="M5 19c3-4 6-7 10-9"/></svg>',
+  sprout:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 21v-9"/><path d="M12 12c0-4-3-6-7-6 0 4 3 6 7 6z"/><path d="M12 10c0-3.5 2.6-5.5 7-5.5 0 3.5-2.6 5.5-7 5.5z"/></svg>',
+  globe:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg>',
+  book:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="5" y="3" width="14" height="18" rx="3"/><path d="M9 8h6M9 12h6M9 16h3"/></svg>',
+  back:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>',
+  next:'<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>'
+};
+function icon(s){return s.svg?SVG[s.svg]:'<span>'+s.txt+'</span>';}
+
+/* ---------- Subjects & questions ---------- */
+var SUBJ={
+ cdp:{svg:'people',c:'#5B4BD6',name:{en:'Child Development & Pedagogy',te:'శిశు వికాసం & బోధనా శాస్త్రం'},qs:[
+  Q('Who proposed the four-stage theory of cognitive development?','నాలుగు దశల సంజ్ఞానాత్మక వికాస సిద్ధాంతాన్ని ప్రతిపాదించినది ఎవరు?',['Lev Vygotsky','Jean Piaget','Lawrence Kohlberg','Erik Erikson'],['లెవ్ వైగోట్స్కీ','జీన్ పియాజే','లారెన్స్ కోల్‌బర్గ్','ఎరిక్ ఎరిక్‌సన్'],1,'Piaget\'s stages: sensorimotor, pre-operational, concrete operational, formal operational.','పియాజే దశలు: ఇంద్రియ చాలక, పూర్వ ప్రచాలక, మూర్త ప్రచాలక, అమూర్త ప్రచాలక దశలు.'),
+  Q('The concept "Zone of Proximal Development" was given by','"సన్నిహిత వికాస మండలం" భావనను ఇచ్చినది',['Vygotsky','Piaget','Skinner','Thorndike'],['వైగోట్స్కీ','పియాజే','స్కిన్నర్','థార్న్‌డైక్'],0,'ZPD is the gap between what a child can do alone and what it can do with help.','పిల్లవాడు ఒంటరిగా చేయగలిగినది, సహాయంతో చేయగలిగినది మధ్య ఉన్న అంతరమే ZPD.'),
+  Q('The RTE Act, 2009 came into force on','విద్యా హక్కు చట్టం – 2009 అమలులోకి వచ్చిన తేదీ',['15 August 2009','26 January 2010','1 April 2010','1 June 2010'],['15 ఆగస్టు 2009','26 జనవరి 2010','1 ఏప్రిల్ 2010','1 జూన్ 2010'],2,'RTE gives free and compulsory education to children aged 6–14 years.','6–14 సంవత్సరాల పిల్లలకు ఉచిత, నిర్బంధ విద్య.'),
+  Q('The theory of Multiple Intelligences was proposed by','బహుళ ప్రజ్ఞల సిద్ధాంతాన్ని ప్రతిపాదించినది',['Alfred Binet','Howard Gardner','Charles Spearman','Lewis Terman'],['ఆల్ఫ్రెడ్ బినే','హోవర్డ్ గార్డనర్','చార్లెస్ స్పియర్‌మన్','లూయిస్ టెర్మన్'],1,'Gardner described several intelligences such as linguistic, logical-mathematical, musical and spatial.','గార్డనర్ భాషా, తార్కిక-గణిత, సంగీత, ప్రాదేశిక వంటి పలు ప్రజ్ఞలను వివరించాడు.'),
+  Q('According to Piaget, object permanence develops in which stage?','పియాజే ప్రకారం వస్తు స్థిరత్వ భావన ఏ దశలో ఏర్పడుతుంది?',['Sensorimotor','Pre-operational','Concrete operational','Formal operational'],['ఇంద్రియ చాలక దశ','పూర్వ ప్రచాలక దశ','మూర్త ప్రచాలక దశ','అమూర్త ప్రచాలక దశ'],0,'Sensorimotor stage: from birth to about 2 years.','ఇంద్రియ చాలక దశ: పుట్టుక నుండి సుమారు 2 సంవత్సరాలు.'),
+  Q('Classical conditioning is associated with','శాస్త్రీయ నిబంధన సిద్ధాంతం ఎవరితో సంబంధం కలిగి ఉంది?',['B.F. Skinner','Ivan Pavlov','Wolfgang Köhler','Albert Bandura'],['బి.ఎఫ్. స్కిన్నర్','ఇవాన్ పావ్‌లోవ్','వోల్ఫ్‌గాంగ్ కోహ్లర్','ఆల్బర్ట్ బండూరా'],1,'Pavlov\'s experiment with a dog, a bell and food.','కుక్క, గంట, ఆహారంతో పావ్‌లోవ్ చేసిన ప్రయోగం.'),
+  Q('Kohlberg\'s theory deals with','కోల్‌బర్గ్ సిద్ధాంతం దేనికి సంబంధించినది?',['Language development','Physical development','Moral development','Emotional development'],['భాషా వికాసం','శారీరక వికాసం','నైతిక వికాసం','ఉద్వేగ వికాసం'],2,'Three levels: pre-conventional, conventional and post-conventional.','మూడు స్థాయిలు: పూర్వ సాంప్రదాయ, సాంప్రదాయ, ఉత్తర సాంప్రదాయ.')
+ ]},
+ tel:{txt:'అ',c:'#C0392B',name:{en:'Telugu',te:'తెలుగు'},qs:[
+  T('"అమ్మ" అనే పదంలోని ద్విత్వాక్షరం ఏది?',['అ','మ','మ్మ','ఆ'],2,'ఒకే హల్లు రెండుసార్లు కలిసి వస్తే ద్విత్వాక్షరం.'),
+  T('శ్రీమద్రామాయణాన్ని సంస్కృతంలో రచించినది ఎవరు?',['వ్యాసుడు','వాల్మీకి','కాళిదాసు','నన్నయ'],1,'వాల్మీకిని ఆదికవి అంటారు.'),
+  T('ఆంధ్ర మహాభారత రచనను ప్రారంభించిన కవి ఎవరు?',['తిక్కన','ఎర్రన','నన్నయ','పోతన'],2,'కవిత్రయం: నన్నయ, తిక్కన, ఎర్రన.'),
+  T('"కవిత్రయం"లో లేని కవి ఎవరు?',['నన్నయ','తిక్కన','ఎర్రన','పోతన'],3,'పోతన ఆంధ్ర మహాభాగవతాన్ని రచించాడు.'),
+  T('"విద్యాలయం" అనే పదంలో ఉన్న సంధి ఏది?',['గుణ సంధి','సవర్ణదీర్ఘ సంధి','వృద్ధి సంధి','యణాదేశ సంధి'],1,'విద్యా + ఆలయం = విద్యాలయం (సవర్ణదీర్ఘ సంధి).'),
+  T('"సూర్యుడు" అనే పదానికి పర్యాయపదం ఏది?',['చంద్రుడు','భానుడు','సాగరం','అనిలుడు'],1,'భానుడు, దినకరుడు, రవి – సూర్యుని పర్యాయపదాలు.'),
+  T('ఆంధ్ర మహాభాగవతాన్ని రచించినది ఎవరు?',['శ్రీనాథుడు','బమ్మెర పోతన','అల్లసాని పెద్దన','తెనాలి రామకృష్ణుడు'],1,'')
+ ]},
+ eng:{txt:'Aa',c:'#0F766E',name:{en:'English',te:'ఇంగ్లీష్'},qs:[
+  T('The plural of "child" is',['childs','childes','children','childrens'],2,'"Child" has an irregular plural: children.'),
+  T('Choose the correct article: "He is ___ honest man."',['a','an','the','no article'],1,'"Honest" begins with a vowel sound, so we use "an".'),
+  T('Choose the synonym of "rapid".',['slow','quick','weak','late'],1,''),
+  T('Choose the antonym of "ancient".',['old','modern','historic','early'],1,''),
+  T('The past tense of "go" is',['goed','gone','went','going'],2,'go – went – gone.'),
+  T('Identify the noun: "The bird sings sweetly."',['bird','sings','sweetly','the'],0,'"Bird" names a living thing, so it is a noun.'),
+  T('"She ___ to school every day."',['go','goes','going','gone'],1,'Simple present with a third-person singular subject takes "goes".')
+ ]},
+ mat1:{txt:'π',c:'#B45309',name:{en:'Mathematics',te:'గణితం'},qs:[
+  Q('25 × 4 = ?','25 × 4 = ?',['90','100','110','125'],null,1,'',''),
+  Q('The LCM of 4 and 6 is','4, 6 ల క.సా.గు',['12','24','6','2'],null,0,'Multiples of 4: 4, 8, 12… Multiples of 6: 6, 12… First common: 12.','4 గుణిజాలు: 4, 8, 12… 6 గుణిజాలు: 6, 12… మొదటి ఉమ్మడి గుణిజం 12.'),
+  Q('The smallest 3-digit number is','అతి చిన్న మూడు అంకెల సంఖ్య',['99','100','101','111'],null,1,'',''),
+  Q('The place value of 7 in 4,735 is','4,735 లో 7 యొక్క స్థాన విలువ',['7','70','700','7000'],null,2,'7 is in the hundreds place: 7 × 100 = 700.','7 వందల స్థానంలో ఉంది: 7 × 100 = 700.'),
+  Q('The perimeter of a square with side 5 cm is','5 సెం.మీ. భుజం గల చతురస్రం చుట్టుకొలత',['10 cm','20 cm','25 cm','15 cm'],['10 సెం.మీ.','20 సెం.మీ.','25 సెం.మీ.','15 సెం.మీ.'],1,'Perimeter = 4 × side = 4 × 5 = 20 cm.','చుట్టుకొలత = 4 × భుజం = 4 × 5 = 20 సెం.మీ.'),
+  Q('1/2 + 1/4 = ?','1/2 + 1/4 = ?',['2/6','3/4','1/6','2/4'],null,1,'1/2 = 2/4, so 2/4 + 1/4 = 3/4.','1/2 = 2/4, కాబట్టి 2/4 + 1/4 = 3/4.'),
+  Q('How many days are there in a leap year?','లీపు సంవత్సరంలో ఎన్ని రోజులు?',['365','366','364','360'],null,1,'February has 29 days in a leap year.','లీపు సంవత్సరంలో ఫిబ్రవరికి 29 రోజులు.')
+ ]},
+ evs:{svg:'sprout',c:'#15803D',name:{en:'Environmental Studies',te:'పరిసరాల విజ్ఞానం'},qs:[
+  Q('The largest planet in our solar system is','సౌర కుటుంబంలో అతిపెద్ద గ్రహం',['Earth','Saturn','Jupiter','Mars'],['భూమి','శని','బృహస్పతి (గురుడు)','అంగారకుడు'],2,'',''),
+  Q('Green plants prepare their food by','ఆకుపచ్చ మొక్కలు ఆహారాన్ని తయారుచేసుకునే ప్రక్రియ',['respiration','photosynthesis','digestion','transpiration'],['శ్వాసక్రియ','కిరణజన్య సంయోగక్రియ','జీర్ణక్రియ','బాష్పోత్సేకం'],1,'Plants use sunlight, water and carbon dioxide to make food.','సూర్యరశ్మి, నీరు, కార్బన్ డయాక్సైడ్‌తో మొక్కలు ఆహారం తయారుచేస్తాయి.'),
+  Q('The national animal of India is','భారతదేశ జాతీయ జంతువు',['Lion','Elephant','Tiger','Peacock'],['సింహం','ఏనుగు','పులి','నెమలి'],2,'The peacock is the national bird.','నెమలి జాతీయ పక్షి.'),
+  Q('Which gas do plants take in to make food?','ఆహారం తయారీకి మొక్కలు గ్రహించే వాయువు ఏది?',['Oxygen','Carbon dioxide','Nitrogen','Hydrogen'],['ఆక్సిజన్','కార్బన్ డయాక్సైడ్','నైట్రోజన్','హైడ్రోజన్'],1,'',''),
+  Q('Which vitamin does our body make with the help of sunlight?','సూర్యరశ్మి సహాయంతో మన శరీరం తయారుచేసే విటమిన్ ఏది?',['Vitamin A','Vitamin B','Vitamin C','Vitamin D'],['విటమిన్ A','విటమిన్ B','విటమిన్ C','విటమిన్ D'],3,'',''),
+  Q('At sea level, water boils at','సముద్ర మట్టం వద్ద నీరు మరిగే ఉష్ణోగ్రత',['0 °C','50 °C','100 °C','200 °C'],null,2,'',''),
+  Q('Which of these is a mammal?','వీటిలో క్షీరదం ఏది?',['Sparrow','Bat','Crocodile','Frog'],['పిచ్చుక','గబ్బిలం','మొసలి','కప్ప'],1,'Bats give birth to young ones and feed them milk.','గబ్బిలం పిల్లలను కని, పాలు ఇస్తుంది.')
+ ]},
+ mat2:{txt:'π',c:'#B45309',name:{en:'Mathematics',te:'గణితం'},qs:[
+  Q('The value of 2⁵ is','2⁵ విలువ',['10','25','32','64'],null,2,'2 × 2 × 2 × 2 × 2 = 32.','2 × 2 × 2 × 2 × 2 = 32.'),
+  Q('The sum of the interior angles of a triangle is','త్రిభుజంలోని అంతర కోణాల మొత్తం',['90°','180°','270°','360°'],null,1,'',''),
+  Q('The HCF of 18 and 24 is','18, 24 ల గ.సా.భా',['3','6','12','72'],null,1,'18 = 2 × 3², 24 = 2³ × 3 → HCF = 2 × 3 = 6.','18 = 2 × 3², 24 = 2³ × 3 → గ.సా.భా = 2 × 3 = 6.'),
+  Q('If 3x + 5 = 20, then x = ?','3x + 5 = 20 అయితే x = ?',['3','4','5','6'],null,2,'3x = 15, so x = 5.','3x = 15, కాబట్టి x = 5.'),
+  Q('The area of a circle of radius 7 cm (π = 22/7) is','7 సెం.మీ. వ్యాసార్థం గల వృత్త వైశాల్యం (π = 22/7)',['44 cm²','154 cm²','49 cm²','22 cm²'],['44 చ.సెం.మీ.','154 చ.సెం.మీ.','49 చ.సెం.మీ.','22 చ.సెం.మీ.'],1,'πr² = 22/7 × 7 × 7 = 154.','πr² = 22/7 × 7 × 7 = 154.'),
+  Q('√144 = ?','√144 = ?',['11','12','13','14'],null,1,'',''),
+  Q('Simple interest on ₹1000 at 10% per annum for 2 years is','₹1000 పై సంవత్సరానికి 10% చొప్పున 2 సంవత్సరాలకు సాధారణ వడ్డీ',['₹100','₹200','₹210','₹1200'],null,1,'SI = PTR/100 = 1000 × 2 × 10 / 100 = ₹200.','సా.వ. = PTR/100 = 1000 × 2 × 10 / 100 = ₹200.')
+ ]},
+ phy:{svg:'atom',c:'#1D4ED8',name:{en:'Physical Science',te:'భౌతిక శాస్త్రం'},qs:[
+  Q('The SI unit of force is','బలానికి SI ప్రమాణం',['joule','newton','watt','pascal'],['జౌల్','న్యూటన్','వాట్','పాస్కల్'],1,'',''),
+  Q('The chemical formula of water is','నీటి రసాయన ఫార్ములా',['H₂O','CO₂','O₂','H₂O₂'],null,0,'',''),
+  Q('The speed of light in vacuum is about','శూన్యంలో కాంతి వేగం సుమారు',['3 × 10⁸ m/s','3 × 10⁵ m/s','340 m/s','3 × 10⁶ m/s'],null,0,'340 m/s is roughly the speed of sound in air.','340 m/s అనేది గాలిలో ధ్వని వేగం.'),
+  Q('The pH of pure water is','స్వచ్ఛమైన నీటి pH విలువ',['0','5','7','14'],null,2,'pH 7 is neutral.','pH 7 అంటే తటస్థం.'),
+  Q('Which is a good conductor of electricity?','విద్యుత్తుకు మంచి వాహకం ఏది?',['Wood','Copper','Plastic','Rubber'],['చెక్క','రాగి','ప్లాస్టిక్','రబ్బరు'],1,'',''),
+  Q('Acceleration due to gravity (g) on Earth is about','భూమిపై గురుత్వ త్వరణం (g) సుమారు',['9.8 m/s²','8.9 m/s²','10.8 m/s²','1.6 m/s²'],null,0,'About 1.6 m/s² is the value on the Moon.','సుమారు 1.6 m/s² చంద్రునిపై విలువ.'),
+  Q('Rusting of iron is a','ఇనుము తుప్పు పట్టడం',['physical change','chemical change','not a change','reversible change'],['భౌతిక మార్పు','రసాయన మార్పు','మార్పు కాదు','తిరుగు (ద్విగత) మార్పు'],1,'A new substance (iron oxide) is formed.','కొత్త పదార్థం (ఐరన్ ఆక్సైడ్) ఏర్పడుతుంది.')
+ ]},
+ bio:{svg:'leaf',c:'#15803D',name:{en:'Biological Science',te:'జీవ శాస్త్రం'},qs:[
+  Q('The powerhouse of the cell is','కణ శక్తి కేంద్రం',['Nucleus','Mitochondria','Ribosome','Golgi body'],['కేంద్రకం','మైటోకాండ్రియా','రైబోజోమ్','గాల్జీ సంక్లిష్టం'],1,'',''),
+  Q('Blood cells that fight infection are','వ్యాధి క్రిములతో పోరాడే రక్త కణాలు',['Red blood cells','White blood cells','Platelets','Plasma'],['ఎర్ర రక్త కణాలు','తెల్ల రక్త కణాలు','రక్త ఫలకికలు','ప్లాస్మా'],1,'',''),
+  Q('The largest organ of the human body is','మానవ శరీరంలో అతిపెద్ద అవయవం',['Liver','Skin','Heart','Lungs'],['కాలేయం','చర్మం','గుండె','ఊపిరితిత్తులు'],1,'The liver is the largest internal organ.','కాలేయం అతిపెద్ద అంతర అవయవం.'),
+  Q('Scurvy is caused by the deficiency of','స్కర్వీ వ్యాధి ఏ విటమిన్ లోపం వల్ల వస్తుంది?',['Vitamin A','Vitamin B1','Vitamin C','Vitamin D'],['విటమిన్ A','విటమిన్ B1','విటమిన్ C','విటమిన్ D'],2,'',''),
+  Q('Which part of the plant absorbs water from the soil?','నేల నుండి నీటిని పీల్చుకునే మొక్క భాగం',['Leaf','Stem','Root','Flower'],['ఆకు','కాండం','వేరు','పువ్వు'],2,'',''),
+  Q('How many chambers does the human heart have?','మానవ హృదయంలో ఎన్ని గదులు ఉంటాయి?',['2','3','4','5'],null,2,'Two atria and two ventricles.','రెండు కర్ణికలు, రెండు జఠరికలు.'),
+  Q('The green pigment in leaves is','ఆకులలోని ఆకుపచ్చ వర్ణద్రవ్యం',['Chlorophyll','Haemoglobin','Melanin','Carotene'],['పత్రహరితం (క్లోరోఫిల్)','హిమోగ్లోబిన్','మెలనిన్','కెరోటిన్'],0,'','')
+ ]},
+ soc:{svg:'globe',c:'#9A3412',name:{en:'Social Studies',te:'సాంఘిక శాస్త్రం'},qs:[
+  Q('The longest river in India is','భారతదేశంలో అతి పొడవైన నది',['Godavari','Ganga','Krishna','Narmada'],['గోదావరి','గంగ','కృష్ణ','నర్మద'],1,'The Godavari is the longest river of South India.','గోదావరి దక్షిణ భారతదేశంలో అతి పొడవైన నది.'),
+  Q('The Constitution of India came into force on','భారత రాజ్యాంగం అమలులోకి వచ్చిన తేదీ',['15 August 1947','26 November 1949','26 January 1950','2 October 1950'],['15 ఆగస్టు 1947','26 నవంబర్ 1949','26 జనవరి 1950','2 అక్టోబర్ 1950'],2,'It was adopted on 26 November 1949.','26 నవంబర్ 1949న ఆమోదించబడింది.'),
+  Q('The chairman of the Drafting Committee of the Constitution was','రాజ్యాంగ ముసాయిదా కమిటీ అధ్యక్షుడు',['Dr. Rajendra Prasad','Dr. B.R. Ambedkar','Jawaharlal Nehru','Sardar Patel'],['డా. రాజేంద్ర ప్రసాద్','డా. బి.ఆర్. అంబేద్కర్','జవహర్‌లాల్ నెహ్రూ','సర్దార్ పటేల్'],1,'',''),
+  Q('Andhra State was formed on','ఆంధ్ర రాష్ట్రం ఏర్పడిన తేదీ',['1 October 1953','1 November 1956','2 June 2014','15 August 1947'],['1 అక్టోబర్ 1953','1 నవంబర్ 1956','2 జూన్ 2014','15 ఆగస్టు 1947'],0,'Kurnool was its capital.','దాని రాజధాని కర్నూలు.'),
+  Q('The Standard Meridian of India is','భారత ప్రామాణిక రేఖాంశం',['68°7′ E','82°30′ E','97°25′ E','23°30′ N'],['68°7′ తూ.','82°30′ తూ.','97°25′ తూ.','23°30′ ఉ.'],1,'',''),
+  Q('The first Prime Minister of India was','భారతదేశ మొదటి ప్రధానమంత్రి',['Jawaharlal Nehru','Lal Bahadur Shastri','Indira Gandhi','Dr. Rajendra Prasad'],['జవహర్‌లాల్ నెహ్రూ','లాల్ బహదూర్ శాస్త్రి','ఇందిరా గాంధీ','డా. రాజేంద్ర ప్రసాద్'],0,'',''),
+  Q('The ozone layer is found in the','ఓజోన్ పొర ఉండే వాతావరణ పొర',['Troposphere','Stratosphere','Mesosphere','Thermosphere'],['ట్రోపోస్ఫియర్','స్ట్రాటోస్ఫియర్','మీసోస్ఫియర్','థర్మోస్ఫియర్'],1,'','')
+ ]}
+};
+var PAPERS={
+ '1A':{name:'Paper 1A',sub:{en:'Classes 1–5',te:'1–5 తరగతులు'},list:['cdp','tel','eng','mat1','evs']},
+ '2A':{name:'Paper 2A',sub:{en:'Classes 6–8',te:'6–8 తరగతులు'},list:['cdp','tel','eng','mat2','phy','bio','soc']}
+};
+
+/* ---------- UI text ---------- */
+var UI={
+ en:{title:'TET Practice',tag:'Practise Paper 1A and Paper 2A subjects with the answer key.',lang:'Language · భాష',paper:'Paper · పేపర్',subjects:'subjects',how:'How to use',
+  steps:['Choose a subject.','Tap the answer you think is right.','Green means correct, red means wrong. Scroll down for the next question.','Your answers stay saved on this phone. Tap Continue next time.'],
+  start:'Start',cont:'Continue',questions:'questions',done:'answered',right:'correct',wrong:'wrong',left:'left',all:'All',wrongOnly:'Wrong',unans:'Not answered',
+  reset:'Reset this subject',resetQ:'Clear all answers in this subject?',add:'Add my questions',why:'Why?',
+  finished:'Subject completed!',score:'Score',emptyF:'No questions here.',choose:'Choose a subject',overall:'Overall',
+  addTitle:'Add your own questions',addHint:'One question per line. Separate parts with | (vertical bar):',addFmt:'Question | Option 1 | Option 2 | Option 3 | Option 4 | Answer number (1–4) | Explanation (optional)',
+  subject:'Subject',save:'Save questions',saved:'questions added.',bad:'Line(s) with errors: ',mine:'Your questions in this subject: ',clearMine:'Delete my questions',clearQ:'Delete all your questions in this subject?'},
+ te:{title:'TET ప్రాక్టీస్',tag:'పేపర్ 1A, పేపర్ 2A సబ్జెక్టులను జవాబులతో ప్రాక్టీస్ చేయండి.',lang:'Language · భాష',paper:'Paper · పేపర్',subjects:'సబ్జెక్టులు',how:'ఎలా వాడాలి',
+  steps:['ఒక సబ్జెక్టు ఎంచుకోండి.','సరైనదని మీకు అనిపించిన జవాబును నొక్కండి.','ఆకుపచ్చ అంటే సరైనది, ఎరుపు అంటే తప్పు. తర్వాతి ప్రశ్న కోసం కిందికి scroll చేయండి.','మీ జవాబులు ఈ ఫోన్‌లోనే సేవ్ అవుతాయి. మళ్లీ వచ్చినప్పుడు "కొనసాగించండి" నొక్కండి.'],
+  start:'మొదలుపెట్టండి',cont:'కొనసాగించండి',questions:'ప్రశ్నలు',done:'చేసినవి',right:'సరైనవి',wrong:'తప్పులు',left:'మిగిలినవి',all:'అన్నీ',wrongOnly:'తప్పులు',unans:'చేయనివి',
+  reset:'ఈ సబ్జెక్టు రీసెట్',resetQ:'ఈ సబ్జెక్టులోని జవాబులన్నీ తీసేయాలా?',add:'నా ప్రశ్నలు కలపండి',why:'ఎందుకు?',
+  finished:'సబ్జెక్టు పూర్తయింది!',score:'స్కోరు',emptyF:'ఇక్కడ ప్రశ్నలు లేవు.',choose:'సబ్జెక్టు ఎంచుకోండి',overall:'మొత్తం',
+  addTitle:'మీ సొంత ప్రశ్నలు కలపండి',addHint:'ఒక లైన్‌కు ఒక ప్రశ్న. భాగాల మధ్య | (నిలువు గీత) పెట్టండి:',addFmt:'ప్రశ్న | ఆప్షన్ 1 | ఆప్షన్ 2 | ఆప్షన్ 3 | ఆప్షన్ 4 | జవాబు సంఖ్య (1–4) | వివరణ (ఐచ్ఛికం)',
+  subject:'సబ్జెక్టు',save:'ప్రశ్నలు సేవ్ చేయండి',saved:'ప్రశ్నలు కలిపాం.',bad:'తప్పులున్న లైన్లు: ',mine:'ఈ సబ్జెక్టులో మీ ప్రశ్నలు: ',clearMine:'నా ప్రశ్నలు తొలగించండి',clearQ:'ఈ సబ్జెక్టులోని మీ ప్రశ్నలన్నీ తొలగించాలా?'}
+};
+
+/* ---------- State ---------- */
+var KEY='rae_tet_v1', CKEY='rae_tet_custom_v1';
+function load(k,d){try{var v=localStorage.getItem(k);return v?JSON.parse(v):d;}catch(e){return d;}}
+function store(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
+var S=load(KEY,{lang:'te',paper:'2A',ans:{},last:null});
+S.ans=S.ans||{};
+var CUSTOM=load(CKEY,{});
+var filter='all';
+function save(){store(KEY,S);}
+function t(k){return UI[S.lang][k];}
+function L(o){return o?(o[S.lang]||o.en):'';}
+function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+
+function qsOf(sid){
+  var base=SUBJ[sid].qs.map(function(q,i){return {id:sid+'-'+i,q:q.q,o:q.o,a:q.a,e:q.e};});
+  var mine=(CUSTOM[sid]||[]).map(function(c){
+    return {id:'c'+c.id,q:{en:c.q,te:c.q},o:c.o.map(function(x){return {en:x,te:x};}),a:c.a,e:c.e?{en:c.e,te:c.e}:null,mine:true};
+  });
+  return base.concat(mine);
+}
+function stats(sid){
+  var qs=qsOf(sid),d=0,r=0;
+  qs.forEach(function(q){var v=S.ans[q.id];if(v!==undefined){d++;if(v===q.a)r++;}});
+  return {total:qs.length,done:d,right:r,wrong:d-r};
+}
+function pct(a,b){return b?Math.round(a*100/b):0;}
+
+/* ---------- Views ---------- */
+var app=document.getElementById('app');
+
+function viewHome(){
+  var P=PAPERS[S.paper];
+  var chips=P.list.map(function(id){var s=SUBJ[id];return '<span class="ico" style="--c:'+s.c+'" title="'+esc(L(s.name))+'">'+icon(s)+'</span>';}).join('');
+  var tot=0,d=0,r=0;P.list.forEach(function(id){var x=stats(id);tot+=x.total;d+=x.done;r+=x.right;});
+  var lastOk=S.last&&P.list.indexOf(S.last)>-1&&stats(S.last).done>0;
+  app.innerHTML=
+   '<section class="hero"><div class="wrap">'+
+     '<div class="logo">'+SVG.book+'</div>'+
+     '<h1>'+t('title')+'</h1><p>'+t('tag')+'</p><span class="brand">రాయ్ ఎడ్యుకేషన్</span>'+
+     '<div class="chips">'+chips+'</div>'+
+   '</div></section>'+
+   '<main class="wrap">'+
+     '<div class="label">'+t('lang')+'</div>'+
+     '<div class="seg" role="group">'+
+       '<button data-lang="en" class="'+(S.lang==='en'?'on':'')+'" aria-pressed="'+(S.lang==='en')+'"><span class="dot">A</span>English</button>'+
+       '<button data-lang="te" class="'+(S.lang==='te'?'on':'')+'" aria-pressed="'+(S.lang==='te')+'"><span class="dot">అ</span>తెలుగు</button>'+
+     '</div>'+
+     '<div class="label">'+t('paper')+'</div>'+
+     '<div class="seg paper" role="group">'+
+       ['1A','2A'].map(function(p){var o=PAPERS[p];return '<button data-paper="'+p+'" class="'+(S.paper===p?'on':'')+'" aria-pressed="'+(S.paper===p)+'">'+o.name+'<small>'+o.list.length+' '+t('subjects')+' · '+L(o.sub)+'</small></button>';}).join('')+
+     '</div>'+
+     (d?'<div class="label">'+t('overall')+'</div><div class="card stat-line"><div><b>'+d+'/'+tot+'</b><span>'+t('done')+'</span></div><div><b style="color:var(--ok)">'+r+'</b><span>'+t('right')+'</span></div><div><b style="color:var(--bad)">'+(d-r)+'</b><span>'+t('wrong')+'</span></div><div><b>'+pct(r,d)+'%</b><span>'+t('score')+'</span></div></div>':'')+
+     '<div class="label">'+t('how')+'</div>'+
+     '<ol class="card steps">'+t('steps').map(function(s,i){return '<li><b>'+(i+1)+'</b><span>'+s+'</span></li>';}).join('')+'</ol>'+
+     '<div class="stack">'+
+       (lastOk?'<button class="btn" data-go="#/quiz/'+S.last+'">'+t('cont')+': '+esc(L(SUBJ[S.last].name))+' '+SVG.next+'</button><button class="btn alt" data-go="#/subjects">'+t('choose')+'</button>'
+              :'<button class="btn" data-go="#/subjects">'+t('start')+' '+SVG.next+'</button>')+
+     '</div>'+
+   '</main>';
+}
+
+function topBar(title,backTo,extra){
+  return '<div class="top"><div class="wrap"><div class="top-in"><button class="back" data-go="'+backTo+'" aria-label="Back">'+SVG.back+'</button><h2>'+esc(title)+'</h2></div>'+(extra||'')+'</div></div>';
+}
+
+function viewSubjects(){
+  var P=PAPERS[S.paper];
+  var html=topBar(P.name+' · '+L(P.sub),'#/')+'<main class="wrap" style="padding-top:14px">';
+  P.list.forEach(function(id){
+    var s=SUBJ[id],x=stats(id);
+    html+='<button class="subj" data-go="#/quiz/'+id+'"><span class="ico" style="--c:'+s.c+'">'+icon(s)+'</span>'+
+      '<span class="subj-main"><h3>'+esc(L(s.name))+'</h3><div class="bar"><i style="width:'+pct(x.done,x.total)+'%"></i></div>'+
+      '<div class="meta">'+x.done+'/'+x.total+' '+t('done')+(x.done?' · <span style="color:var(--ok)">'+x.right+' '+t('right')+'</span>':'')+'</div></span>'+
+      '<span class="go">'+SVG.next+'</span></button>';
+  });
+  html+='<div class="tools"><button class="btn alt sm" data-go="#/add/'+P.list[0]+'">+ '+t('add')+'</button></div></main>';
+  app.innerHTML=html;
+}
+
+function optHtml(q,i){
+  var v=S.ans[q.id],answered=v!==undefined,cls='opt';
+  if(answered){if(i===q.a)cls+=' ok';else if(i===v)cls+=' bad';}
+  return '<button class="'+cls+'" data-q="'+q.id+'" data-i="'+i+'"'+(answered?' disabled':'')+'><span class="k">'+'ABCD'[i]+'</span><span>'+esc(L(q.o[i]))+'</span></button>';
+}
+function cardHtml(q,n){
+  var v=S.ans[q.id],answered=v!==undefined;
+  return '<article class="qcard" id="card-'+q.id+'"><div class="qhead"><span class="qn">'+n+'</span><p class="qtext">'+esc(L(q.q))+'</p></div>'+
+    '<div class="opts">'+q.o.map(function(o,i){return optHtml(q,i);}).join('')+'</div>'+
+    (answered&&q.e&&L(q.e)?'<div class="exp"><b>'+t('why')+'</b> '+esc(L(q.e))+'</div>':'')+
+    '</article>';
+}
+function viewQuiz(sid){
+  if(!SUBJ[sid]){location.hash='#/subjects';return;}
+  S.last=sid;save();
+  var s=SUBJ[sid],x=stats(sid),qs=qsOf(sid);
+  var extra='<div class="bar"><i id="pbar" style="width:'+pct(x.done,x.total)+'%"></i></div>'+
+    '<div class="filters">'+[['all',t('all')],['wrong',t('wrongOnly')],['left',t('unans')]].map(function(f){return '<button data-filter="'+f[0]+'" class="'+(filter===f[0]?'on':'')+'">'+f[1]+'</button>';}).join('')+'</div>'+
+    '<div class="counts" id="counts"></div>';
+  var list=qs.map(function(q,i){return {q:q,n:i+1};}).filter(function(o){
+    var v=S.ans[o.q.id];
+    if(filter==='wrong')return v!==undefined&&v!==o.q.a;
+    if(filter==='left')return v===undefined;
+    return true;
+  });
+  app.innerHTML=topBar(L(s.name),'#/subjects',extra)+
+    '<main class="wrap"><div id="doneBox"></div><div id="qlist">'+
+    (list.length?list.map(function(o){return cardHtml(o.q,o.n);}).join(''):'<div class="empty">'+t('emptyF')+'</div>')+
+    '</div><div class="tools"><button class="btn alt sm" data-go="#/add/'+sid+'">+ '+t('add')+'</button><button class="btn alt sm" data-reset="'+sid+'">'+t('reset')+'</button></div></main>';
+  updateCounts(sid);
+}
+function updateCounts(sid){
+  var x=stats(sid);
+  var c=document.getElementById('counts');
+  if(c)c.innerHTML='<span>'+x.done+'/'+x.total+' '+t('done')+'</span><span class="r">✓ '+x.right+'</span><span class="w">✗ '+x.wrong+'</span><span>'+(x.total-x.done)+' '+t('left')+'</span>';
+  var b=document.getElementById('pbar');if(b)b.style.width=pct(x.done,x.total)+'%';
+  var d=document.getElementById('doneBox');
+  if(d)d.innerHTML=(x.total&&x.done===x.total)?'<div class="done"><h3>'+t('finished')+'</h3><div>'+t('score')+': '+x.right+'/'+x.total+' ('+pct(x.right,x.total)+'%)</div></div>':'';
+}
+
+function viewAdd(sid){
+  var P=PAPERS[S.paper]; if(P.list.indexOf(sid)<0)sid=P.list[0];
+  var n=(CUSTOM[sid]||[]).length;
+  app.innerHTML=topBar(t('addTitle'),'#/quiz/'+sid)+
+   '<main class="wrap" style="padding-top:14px">'+
+    '<div class="label">'+t('subject')+'</div>'+
+    '<select id="addSub">'+P.list.map(function(id){return '<option value="'+id+'"'+(id===sid?' selected':'')+'>'+esc(L(SUBJ[id].name))+'</option>';}).join('')+'</select>'+
+    '<p class="hint">'+t('addHint')+'<br><code>'+t('addFmt')+'</code></p>'+
+    '<p class="hint">ఉదా: <code>RTE చట్టం ఏ వయస్సు పిల్లలకు? | 3–10 | 6–14 | 5–15 | 10–18 | 2 | 6–14 సం. పిల్లలకు ఉచిత విద్య</code></p>'+
+    '<textarea id="addText" placeholder="'+esc(t('addFmt'))+'"></textarea>'+
+    '<div class="stack"><button class="btn" id="addSave">'+t('save')+'</button></div>'+
+    '<div class="msg" id="addMsg"></div>'+
+    '<p class="hint" id="mineInfo">'+t('mine')+n+'</p>'+
+    (n?'<button class="btn alt sm" id="addClear">'+t('clearMine')+'</button>':'')+
+   '</main>';
+  document.getElementById('addSub').onchange=function(){location.hash='#/add/'+this.value;};
+  document.getElementById('addSave').onclick=function(){
+    var sub=document.getElementById('addSub').value,lines=document.getElementById('addText').value.split(/\r?\n/),ok=[],badL=[];
+    lines.forEach(function(line,i){
+      if(!line.trim())return;
+      var p=line.split('|').map(function(s){return s.trim();});
+      var a=parseInt(p[5],10);
+      if(p.length<6||!p[0]||p.slice(1,5).some(function(s){return !s;})||!(a>=1&&a<=4)){badL.push(i+1);return;}
+      ok.push({id:Date.now().toString(36)+i,q:p[0],o:p.slice(1,5),a:a-1,e:p[6]||''});
+    });
+    CUSTOM[sub]=(CUSTOM[sub]||[]).concat(ok);store(CKEY,CUSTOM);
+    var m=document.getElementById('addMsg');
+    m.className='msg '+(badL.length?'bad':'ok');
+    m.textContent=ok.length+' '+t('saved')+(badL.length?' '+t('bad')+badL.join(', '):'');
+    if(ok.length&&!badL.length)document.getElementById('addText').value='';
+    document.getElementById('mineInfo').textContent=t('mine')+CUSTOM[sub].length;
+  };
+  var cl=document.getElementById('addClear');
+  if(cl)cl.onclick=function(){
+    if(!confirm(t('clearQ')))return;
+    (CUSTOM[sid]||[]).forEach(function(c){delete S.ans['c'+c.id];});
+    delete CUSTOM[sid];store(CKEY,CUSTOM);save();viewAdd(sid);
+  };
+}
+
+/* ---------- Router & events ---------- */
+function route(){
+  var p=(location.hash.replace(/^#\/?/,'')||'').split('/');
+  if(p[0]==='subjects')viewSubjects();
+  else if(p[0]==='quiz')viewQuiz(p[1]);
+  else if(p[0]==='add')viewAdd(p[1]);
+  else viewHome();
+  window.scrollTo(0,0);
+}
+window.addEventListener('hashchange',function(){filter='all';route();});
+
+app.addEventListener('click',function(e){
+  var b=e.target.closest('button');if(!b)return;
+  if(b.dataset.go){location.hash=b.dataset.go;return;}
+  if(b.dataset.lang){S.lang=b.dataset.lang;document.documentElement.lang=S.lang==='te'?'te':'en';save();viewHome();return;}
+  if(b.dataset.paper){S.paper=b.dataset.paper;save();viewHome();return;}
+  if(b.dataset.filter){filter=b.dataset.filter;var y=window.scrollY;viewQuiz(S.last);window.scrollTo(0,0);return;}
+  if(b.dataset.reset){
+    if(!confirm(t('resetQ')))return;
+    qsOf(b.dataset.reset).forEach(function(q){delete S.ans[q.id];});save();viewQuiz(b.dataset.reset);return;
+  }
+  if(b.dataset.q){
+    var id=b.dataset.q,i=parseInt(b.dataset.i,10);
+    if(S.ans[id]!==undefined)return;
+    S.ans[id]=i;save();
+    var sid=S.last,qs=qsOf(sid),n=0,q=null;
+    qs.forEach(function(x,k){if(x.id===id){q=x;n=k+1;}});
+    var card=document.getElementById('card-'+id);
+    if(card&&q){var tmp=document.createElement('div');tmp.innerHTML=cardHtml(q,n);card.replaceWith(tmp.firstChild);}
+    updateCounts(sid);
+  }
+});
+
+document.documentElement.lang=S.lang==='te'?'te':'en';
+route();
+</script>
+</body>
+</html>
